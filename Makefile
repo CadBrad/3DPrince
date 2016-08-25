@@ -11,8 +11,9 @@ deldb:
 	rm -f $(DATABASE_NAME)
 
 syncdb:
-	python manage.py makemigrations
 	python manage.py migrate
+	python manage.py makemigrations
+	
 
 initdb:
 	sqlite3 $(DATABASE_NAME) < seed.sql
