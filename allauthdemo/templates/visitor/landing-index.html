@@ -1,0 +1,20 @@
+{% extends "bases/bootstrap-visitor.html" %}
+{% load staticfiles %}
+
+{% block content %}
+
+<div class="container">
+  <div class="jumbotron text-center">
+    <h1>Infinity-Box </h1>
+    <h2> 3D Printing simplified for everyone</h2><br>
+    <p>
+      <a class="btn btn-lg btn-success " href="{% url 'landing_about' %}" role="button">Learn more</a>
+      or
+      <a class="btn btn-lg btn-success " href="{% url 'account_login' %}" role="button">Join / Log In</a>
+    </p>
+  </div>
+</div>
+
+{% endblock %}
+
+
