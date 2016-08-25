@@ -72,7 +72,7 @@ To delete the database and start from scratch please review the demo-allauth-boo
 
 The immediate next steps are as follows below. <br> *Correct save location for uploaded files<br>
 	*Get API working and remote login from python script <br>
-    *Delpoy live
+    *Deploy live
 
 
 Once live there can be more frontend work done especially to the form.
