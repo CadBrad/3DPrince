@@ -1,6 +1,6 @@
 # 3DPrince
 
-This is a site built around the demo-allauth-bootstrap template, which also uses [django-allauth](https://github.com/pennersr/django-allauth).
+The point of this site is to simplify 3D printing for the end user to make it as simple as any other home applicance. By implementing a system to take only the best 3D printable models a library can be built up that also enable slicing on demand.  By setting up this site well the average user will no longer need virtually any computer knowledge to benefit from 3D printing.  This is a site built around the demo-allauth-bootstrap template, which also uses [django-allauth](https://github.com/pennersr/django-allauth). There is a bit more work necessary before deployment, however the function of the site is almost complete. 
 
 ## tl;dr
 
@@ -20,10 +20,10 @@ This is is an opensource site built on Django based around the idea of sharing 3
 ``source mypy/bin/activate`` <br>
 ``pip install -r requirements.txt``
 
-3. Run the following to set up the database for the first time.	<br><br> ``django migrate``<br>
-``django makemigrations``
+3. Run the following to set up the database for the first time.	<br><br> ``python manage.py migrate``<br>
+``python manage.py makemigrations``
 
-4. Run ``django runservers`` to start the local server.
+4. From now on while your virtualenv is running, run ``python manage.py runservers`` to start the local server.
 
 5. Visit http://127.0.0.1:8000/
 
