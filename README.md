@@ -19,9 +19,9 @@ This is is an opensource site built on Django based around the idea of sharing 3
 2. Install a ``virtualenv`` and requirements:
 
 (Linux)
-virtualenv mypy
-source mypy/bin/activate
-pip install -r requirements.txt
+``virtualenv mypy``
+``source mypy/bin/activate``
+``pip install -r requirements.txt``
 
 3. 	
 
