@@ -4,7 +4,7 @@ This is a site built around the demo-allauth-bootstrap template, which also uses
 
 ## tl;dr
 
-This is is an opensource site built on Django based around the idea of sharing 3D printer files (.stl and .ini) sharing these files and allowing slicing to occuring from the server allows smaller computers (such as raspberry pis) to access gcode on command. 
+This is is an opensource site built on Django based around the idea of sharing 3D printer files (.stl and .ini) and allowing slicing to occuring from the server allows smaller computers (such as raspberry pis) to access gcode on command. 
 
 ## Objectives
 
@@ -18,10 +18,10 @@ This is is an opensource site built on Django based around the idea of sharing 3
 1. Install Python, 2 or 3 should both work.
 2. Install a ``virtualenv`` and requirements:
 
-Linux
-        $ virtualenv mypy
-        $ . mypy/bin/activate
-        $ pip install -r requirements.txt
+(Linux)
+virtualenv mypy
+source mypy/bin/activate
+pip install -r requirements.txt
 
 3. 	
 
