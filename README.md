@@ -16,20 +16,20 @@ This is is an opensource site built on Django based around the idea of sharing 3
 ## Getting Running
 
 1. Install Python, 2 or 3 should both work.
-2. Install a ``virtualenv`` and requirements:
+2. Install a ``virtualenv`` and requirements (Linux shown) :
 
-(Linux)
 ``virtualenv mypy``
 ``source mypy/bin/activate``
 ``pip install -r requirements.txt``
 
-3. 	
+3. Run the following to set up the database for the first time.	
 
-django migrate
-django makemigrations
-django runservers 
+``django migrate``
+``django makemigrations``
 
-4. Visit http://127.0.0.1:8000/
+4. Run ``django runservers`` to start the local server.
+
+5. Visit http://127.0.0.1:8000/
 
 
 This should get it started with a database attached. Allauth is the authentication and there are forms built up for the bootstrap3 front end.
