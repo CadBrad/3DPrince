@@ -18,9 +18,7 @@ This is is an opensource site built with Python on Django based around the idea 
 ## Getting Running
 
 1. Download from the source.
-2. Install a ``virtualenv`` and requirements (Linux shown) : <br> <br>``virtualenv mypy`` <br>
-``source mypy/bin/activate`` <br>
-``pip install -r requirements.txt``
+2. Create a ``virtualenv`` and install requirements requirements : <br> <br>``pip install -r requirements.txt``<br>
 
 
 ## Start the server
@@ -36,6 +34,31 @@ This should get it started with a database attached. Allauth is the authenticati
 ## Login to site
 
 This can either be done by running ``python manage.py createsuperuser`` or creating a local account with the login function on the website. 
+
+## How to use virtualenv
+
+Linux<br><br>
+First run the following installation commands.<br>
+``pip install virtualenv`` <br>
+Create new virtualenv called "NewEnv". <br>
+``virtualenv NewEnv`` <br>
+Start the new new virtualenv. <br>
+``source NewEnv/bin/activate`` <br>
+Exit the virtualenv.<br>
+``deactivate`` <br><br>
+
+Windows<br><br>
+
+First run the following installation commands.<br>
+``pip install virtualenv virtualenvwrapper-win`` <br>
+Create new virtualenv called "NewEnv". <br>
+``mkvirtualenv NewEnv`` <br>
+Start the new new virtualenv. <br>
+``workon NewEnv`` <br>
+Exit the virtualenv.<br>
+``deactivate`` <br><br>
+
+
 
 ## Database management
 
