@@ -16,15 +16,11 @@ This is is an opensource site built on Django based around the idea of sharing 3
 ## Getting Running
 
 1. Install Python, 2 or 3 should both work.
-2. Install a ``virtualenv`` and requirements (Linux shown) :
-
-``virtualenv mypy``
-``source mypy/bin/activate``
+2. Install a ``virtualenv`` and requirements (Linux shown) : <br> <br>``virtualenv mypy`` <br>
+``source mypy/bin/activate`` <br>
 ``pip install -r requirements.txt``
 
-3. Run the following to set up the database for the first time.	
-
-``django migrate``
+3. Run the following to set up the database for the first time.	<br><br> ``django migrate``<br>
 ``django makemigrations``
 
 4. Run ``django runservers`` to start the local server.
@@ -37,8 +33,7 @@ This should get it started with a database attached. Allauth is the authenticati
 
 ## Next Steps
 
-The immediate next steps are as follows below
-	*Correct save location for uploaded files
+The immediate next steps are as follows below. <br> *Correct save location for uploaded files<br>
 	*Delpoy live
 
 Once live there can be more frontend work done especially to the form.
