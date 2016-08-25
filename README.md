@@ -22,8 +22,6 @@ This is is an opensource site built with Python on Django based around the idea 
 ``source mypy/bin/activate`` <br>
 ``pip install -r requirements.txt``
 
-3. Run the following to set up the database for the first time.	<br><br> ``python manage.py migrate``<br>
-``python manage.py makemigrations``
 
 ## Start the server
 
@@ -34,6 +32,17 @@ This is is an opensource site built with Python on Django based around the idea 
 
 This should get it started with a database attached. Allauth is the authentication and there are forms built up for the bootstrap3 front end.
 
+
+## Login to site
+
+This can either be done by running ``python manage.py createsuperuser`` or creating a local account with the login function on the website. 
+
+## Database management
+
+For additions to the database models run the following. <br><br> ``python manage.py migrate``<br>
+``python manage.py makemigrations``
+
+To delete the database and start from scratch please review the demo-allauth-bootstrap README.md
 
 ## Next Steps
 

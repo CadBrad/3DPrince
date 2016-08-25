@@ -44,11 +44,9 @@ class ConfigFiles(models.Model):
     creator = models.CharField(_('Creator'),
     max_length=40, blank=True, null=True, unique=False)
 
-    '''
     pub_date = models.DateTimeField(_('date_joined'), 
     default=timezone.now)
 
-    '''
 
 
 
@@ -67,16 +65,14 @@ class UploadedFiles(models.Model):
      max_length=40, blank=True, null=True, unique=False)
     SubSubCategory = models.CharField(_('SubSubCategory_field'),
      max_length=40, blank=True, null=True, unique=False)
-    '''
+    
     FileType = models.BooleanField(_('Global_or_Local'),
-    blank=True, unique=False)
+    default=0, unique=False)
     LicenseType = models.BooleanField(_('Previous License?'),
-    unique=False)
+    default=0, unique=False)
     LicenseTag = models.CharField(_('License'),
      max_length=200, blank=True, null=True, unique=False)
-    ExtraFeatures = models.CharField(_('Advanced Slicing Overrides'))
-    
-    '''
+ 
 
     pub_date = models.DateTimeField(_('date_joined'), default=timezone.now)
 
