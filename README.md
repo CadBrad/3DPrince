@@ -19,7 +19,8 @@ This is is an opensource site built with Python on Django based around the idea 
 
 1. Download from the source.
 2. Create a ``virtualenv`` and install requirements requirements : <br> <br>``pip install -r requirements.txt``<br>
-
+<br> On Windows you must do the following command after the pip install.
+<br>``easy_install Pillow``<br>
 
 ## Start the server
 
