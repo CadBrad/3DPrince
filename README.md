@@ -1,10 +1,12 @@
 # 3DPrince
 
-The point of this site is to simplify 3D printing for the end user to make it as simple as any other home applicance. By implementing a system to take only the best 3D printable models a library can be built up that also enable slicing on demand.  By setting up this site well the average user will no longer need virtually any computer knowledge to benefit from 3D printing.  This is a site built around the demo-allauth-bootstrap template, which also uses [django-allauth](https://github.com/pennersr/django-allauth). There is a bit more work necessary before deployment, however the function of the site is almost complete. 
+The point of this site is to simplify 3D printing for the end user to make it as simple as any other home applicance. By implementing a system to take only the best 3D printable models a library can be built up that also enable slicing on demand.  By setting up this site well the average user will need virtually no computer knowledge to benefit from 3D printing. A raspberry pi access this information through an API on the back end of the site, and displays it on the 3D printer at the users finger tips.  After proving this concept on small scale, this current project is aimed at full deployment and end-user use. This is a site built around the demo-allauth-bootstrap template, which also uses [django-allauth](https://github.com/pennersr/django-allauth). There is a bit more work necessary before deployment, however the function of the site is almost complete. 
+
+Any help to this project would be greatly appreciated! Deployment is so close and from there this project can become self sustaining.
 
 ## tl;dr
 
-This is is an opensource site built on Django based around the idea of sharing 3D printer files (.stl and .ini) and allowing slicing to occuring from the server allows smaller computers (such as raspberry pis) to access gcode on command. 
+This is is an opensource site built with Python on Django based around the idea of sharing 3D printer files (.stl and .ini) and allowing slicing to occuring from the server allows smaller computers (such as raspberry pis) to access gcode on command. 
 
 ## Objectives
 
@@ -15,7 +17,7 @@ This is is an opensource site built on Django based around the idea of sharing 3
 
 ## Getting Running
 
-1. Install Python, 2 or 3 should both work.
+1. Download from the source.
 2. Install a ``virtualenv`` and requirements (Linux shown) : <br> <br>``virtualenv mypy`` <br>
 ``source mypy/bin/activate`` <br>
 ``pip install -r requirements.txt``
@@ -23,9 +25,11 @@ This is is an opensource site built on Django based around the idea of sharing 3
 3. Run the following to set up the database for the first time.	<br><br> ``python manage.py migrate``<br>
 ``python manage.py makemigrations``
 
-4. From now on while your virtualenv is running, run ``python manage.py runservers`` to start the local server.
+## Start the server
 
-5. Visit http://127.0.0.1:8000/
+1. From now on while your virtualenv is running, run ``python manage.py runservers`` to start the local server.
+
+2. Visit http://127.0.0.1:8000/
 
 
 This should get it started with a database attached. Allauth is the authentication and there are forms built up for the bootstrap3 front end.
