@@ -47,9 +47,9 @@ To delete the database and start from scratch please review the demo-allauth-boo
 ## Next Steps
 
 The immediate next steps are as follows below. <br> *Correct save location for uploaded files<br>
-	*Delpoy live
+	*Get API working and remote login from python script <br>
+    *Delpoy live
+
 
 Once live there can be more frontend work done especially to the form.
 
-
-# 3DPrince
