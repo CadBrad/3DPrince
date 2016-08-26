@@ -7,6 +7,11 @@ configure:
 
 rebuild: deldb syncdb initdb
 
+rebuild-win: deldb-win syncdb initdb
+
+deldb-win:
+	del -f $(DATABASE_NAME)
+
 deldb:
 	rm -f $(DATABASE_NAME)
 

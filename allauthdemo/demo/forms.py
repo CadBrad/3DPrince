@@ -3,7 +3,13 @@ from django.core.validators import MinLengthValidator
 
 from .models import UploadedFiles, ConfigFiles
 
-
+class ContactForm(forms.Form):
+    contact_name = forms.CharField(required=True)
+    contact_email = forms.EmailField(required=True)
+    content = forms.CharField(
+        required=True,
+        widget=forms.Textarea
+    )
 
 class NewUpload(forms.ModelForm):
 

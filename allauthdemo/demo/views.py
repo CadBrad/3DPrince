@@ -7,10 +7,15 @@ from django.views.generic.edit import FormView, ContextMixin, FormMixin, UpdateV
 from django.contrib.auth.decorators import login_required
 from django.core.urlresolvers import reverse_lazy
 
-from .forms import NewUpload, ConfigUpload
+from .forms import NewUpload, ConfigUpload, ContactForm
 
 # Create your views here.
-
+def contact(request):
+    form_class = ContactForm
+    
+    return render(request, 'contact.html', {
+        'form': form_class,
+    })
 
 
 class MyModelInstanceMixin(FormMixin):
