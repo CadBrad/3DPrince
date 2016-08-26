@@ -19,7 +19,8 @@ This is is an opensource site built with Python on Django based around the idea 
 
 1. Download from the source.
 2. Create a ``virtualenv`` and install requirements requirements : <br> <br>``pip install -r requirements.txt``<br>
-
+<br> On Windows you must do the following command after the pip install.
+<br>``easy_install Pillow``<br>
 
 ## Start the server
 
@@ -71,7 +72,7 @@ To delete the database and start from scratch please review the demo-allauth-boo
 
 The immediate next steps are as follows below. <br> *Correct save location for uploaded files<br>
 	*Get API working and remote login from python script <br>
-    *Delpoy live
+    *Deploy live
 
 
 Once live there can be more frontend work done especially to the form.
