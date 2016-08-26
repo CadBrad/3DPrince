@@ -40,22 +40,22 @@ This can either be done by running ``python manage.py createsuperuser`` or creat
 
 Linux<br><br>
 First run the following installation commands.<br>
-``pip install virtualenv`` <br>
+``pip install virtualenv`` <br><br>
 Create new virtualenv called "NewEnv". <br>
-``virtualenv NewEnv`` <br>
+``virtualenv NewEnv`` <br><br>
 Start the new new virtualenv. <br>
-``source NewEnv/bin/activate`` <br>
+``source NewEnv/bin/activate`` <br><br>
 Exit the virtualenv.<br>
 ``deactivate`` <br><br>
 
 Windows<br><br>
 
 First run the following installation commands.<br>
-``pip install virtualenv virtualenvwrapper-win`` <br>
+``pip install virtualenv virtualenvwrapper-win`` <br><br>
 Create new virtualenv called "NewEnv". <br>
-``mkvirtualenv NewEnv`` <br>
+``mkvirtualenv NewEnv`` <br><br>
 Start the new new virtualenv. <br>
-``workon NewEnv`` <br>
+``workon NewEnv`` <br><br>
 Exit the virtualenv.<br>
 ``deactivate`` <br><br>
 
@@ -66,13 +66,14 @@ Exit the virtualenv.<br>
 For additions to the database models run the following. <br><br> ``python manage.py migrate``<br>
 ``python manage.py makemigrations``
 
-To delete the database and start from scratch please review the demo-allauth-bootstrap README.md
+To delete the database and start from scratch run ``make rebuild`` or for Windows  ``make rebuild-win``.
 
 ## Next Steps
 
-The immediate next steps are as follows below. <br> *Correct save location for uploaded files<br>
+The immediate next steps are as follows below. <br> 
+	*Correct save location for uploaded files<br>
 	*Get API working and remote login from python script <br>
-    *Deploy live
+	*Deploy live
 
 
 Once live there can be more frontend work done especially to the form.
