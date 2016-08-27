@@ -74,9 +74,15 @@ To delete the database and start from scratch run ``make rebuild`` or for Window
 
 ## Next Steps
 
-The immediate next steps are as follows below. <br> 
+The immediate next steps are as follows below. <br><br> 
 	*Correct save location for uploaded files<br>
+	## Within allauthdemo/demo/models.py there is a function called "def user_directory_path" that dictates what folder the files are saved in. Currently uploading to "None" folder. <br><br>
 	*Get API working and remote login from python script <br>
+	## Should just add django-rest for API. Maybe oauth for remote login? <br><br>
+	*Process new STL files through python script for file info.<br>
+	## Python script already written, so probably just update allauthdemo/demo/views.py within "class DemoUserEditView(FormView)" and the function "def post". <br><br> 
+	*Process STL files pulled from python program to slice on server and just deliver gcode.<br>
+	## This probaly involves a GET function defination, but i'm not sure. <br><br> 
 	*Deploy live
 
 
