@@ -17,6 +17,7 @@ This is is an opensource site built with Python on Django based around the idea 
 
 2. Allow user upload/download of unique 3D Printer configuration files (.ini). Both unique printers and specific settings in existing printers.
 
+3. Allow on-demand slicing from authorized script (raspberry pi's).
 
 ## Installing
 
